@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+</head>
+<style>
+    *{
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .spotify-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.spotimg{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+body::-webkit-scrollbar-track {
+    background:black; 
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #666; 
+    border-radius: 5px;
+  }
+    h1{
+        text-align: center;
+        margin: 10px;
+        text-decoration:overline underline;
+        line-height: 50px;
+        word-spacing: 20px;
+        letter-spacing: 5px;
+    }
+    .cont{width: 35vw;
+    margin: auto;
+background-color: rgb(18,18,18);}
+    .game{
+        border: 1px solid black;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        width: 200px;
+        border: 5px solid black;
+        height: 50px;
+        padding: 20px;
+        margin: 2px;
+        background-color: rgb(18,18,18);
+        cursor: pointer;
+        font-size: 80px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 9px 4px gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: cursive;
+        color: white;
+    }
+    .play{
+        width: 40vw;
+        display: flex;
+        margin: auto;
+        justify-content:space-between;
+        align-items: center;
+        gap: 100px;
+        margin-top: 50px;
+    }
+    .player{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: cursive;
+        margin: auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    .play1{background-color: rgb(18,18,18);}
+    .play2{background-color:black;}
+    .reset, a{
+        text-decoration: none;
+        font-family: cursive;
+        cursor: pointer;
+        padding: 10px;
+        color:white;
+        background-color: red   ;
+    }
+    .win{
+        text-align: center;
+        font-size: 40px;
+        margin: 20px;
+        color: orangered;
+    }
+    .hide{
+        visibility: hidden;
+    }
+</style>
+<body>
+    <div class="spotimg">
+        <img src="../assests/images/omnify V.png" alt="Spotify" class="spotify-image">
+        </div>
+    <h1>Tic-Tac-Toe</h1>
+    <p class="win hide">WINNER</p>
+    <div class="cont">
+    <div class="game">
+        <div class="row1 row">
+        <div class="box box1"> </div>
+        <div class="box box2"></div>
+        <div class="box box3"> </div></div>
+        <div class="row2 row">
+        <div class="box box4"> </div>
+        <div class="box box5"></div>
+        <div class="box box6"> </div></div>
+        <div class="row3 row">
+        <div class="box box7"></div>
+        <div class="box box8"> </div>
+        <div class="box box9"></div></div>
+    </div></div>
+    <div class="play">
+        <div class="play1 player">PLAYER 1</div>
+        <button class="reset"><a href="index.html">RESET</a></button>
+        <div class="play2 player">PLAYER 2</div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
