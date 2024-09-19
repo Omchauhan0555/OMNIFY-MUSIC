@@ -2,12 +2,13 @@ console.log("lets do javascript");
 let playicon = document.querySelector(".playicons");
 let playing = document.querySelector("#play");
 var foldername = "hindi";
+const songpath = "http://127.0.0.1:3000/songs/" 
 
 const songsurl = [];
 
 async function getsongurl() {
   let a = await fetch(
-    "http://127.0.0.1:3000/songs/" + foldername + "/"
+    songpath + foldername + "/"
   );
   let response = await a.text();
   let div = document.createElement("div");
@@ -26,7 +27,7 @@ const currentsong = new Audio();
 
 async function getsongname() {
   let a = await fetch(
-    "http://127.0.0.1:3000/songs/" + foldername + "/"
+    songpath + foldername + "/"
   );
   let response = await a.text();
   let div = document.createElement("div");
@@ -116,7 +117,7 @@ getsongs();
 
 function playmusic(track) {
   currentsong.src =
-    "http://127.0.0.1:3000/songs/" + foldername + "/" +
+    songpath + foldername + "/" +
     track +
     "%20(DJJOhAL.Com).mp3";
   currentsong.play();
